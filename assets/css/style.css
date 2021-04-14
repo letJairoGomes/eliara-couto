@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+@font-face {
+  font-family: humble;
+  src: url(./fonts/Humble.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  min-width: 470px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+section {
+  padding: 4rem 0;
+  margin: 0;
+}
+
+a,
+p {
+  color: #272727;
+  font-size: 20px;
+}
+
+:root {
+  --section-color: #efeeea;
+  --border-color: #bfbfbf;
+  --button-color: #ff2089;
+  --title-font: humble;
+}
+
+/* Geral */
+
+.container {
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pink_blonders {
+  color: var(--button-color);
+  font-weight: bold;
+}
+
+.center-margin {
+  margin: 0 auto;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.margin-y {
+  margin: 10px 0;
+}
+
+.margin-x {
+  margin: 0 10px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 90px;
+  font-weight: 500px;
+  color: #000;
+  text-shadow: 0 3px 2px rgb(134 140 150 / 65%);
+}
+
+.btn {
+  border: none;
+  padding: 8px 0;
+  font-size: 20px;
+  width: 300px;
+  color: white;
+  background: var(--button-color);
+  border-radius: 50px;
+  box-shadow: 0 6px 12px rgb(134 140 150 / 65%);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.bold {
+  font-weight: bold;
+  color: #ff2089;
+}
+.bold:hover {
+  text-decoration: underline;
+}
+
+/* Nav */
+.nav_list {
+  justify-content: space-around;
+}
+
+.nav_item {
+  margin: 5px;
+}
+
+.nav_link {
+  padding: 8px 20px;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+}
+
+/*Main*/
+.main {
+  background: url("/assets/img/bkg-1.jpg") no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+/*Sobre mim*/
+
+.janeDoe_img {
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px var(--button-color);
+}
+
+/* Trabalho */
+.trabalho {
+  background: #efeeea;
+}
+
+.corousel {
+  height: 600px;
+  width: 90%;
+  background: gray;
+}
+
+/* Despensa */
+
+.despensa {
+  background: url("/assets/img/bkg-2.jpg") no-repeat;
+}
+
+.despensa_card {
+  background-color: #efefef;
+  height: 350px;
+  width: 300px;
+  margin: 10px;
+  border: 4px solid #bfbfbf;
+  padding: 1rem;
+}
+
+.card_spans {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.card_spans span {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.card_spans span::after {
+  content: "";
+  height: 15px;
+  width: 10px;
+  padding: 2px 5px;
+  border: 3px solid #bfbfbf;
+}
+
+/* Receitas */
+.receitas {
+  background-color: var(--section-color);
+}
+
+.receita_card {
+  margin: 20px;
+  height: 320px;
+  width: 300px;
+  position: relative;
+}
+
+.receita_img {
+  border-radius: 20px;
+  border: 4px solid #bfbfbf;
+  height: 320px;
+  width: 300px;
+}
+
+.receita_name {
+  position: absolute;
+  background-color: #272727;
+  color: white;
+  padding: 8px 10px;
+  justify-content: center;
+  bottom: -15px;
+  right: -10px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+/* E-book */
+.e-book_form {
+  background: #efeeea;
+  padding: 3rem;
+  border: 4px solid #bfbfbf;
+  justify-content: space-evenly;
+}
+
+.e-book_img {
+  box-shadow: 0 6px 12px rgb(134 140 150 / 65%);
+}
+
+.form_input {
+  width: 300px;
+  padding: 1rem;
+  font-size: 18px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  border: 4px solid #bfbfbf;
+}
+
+/* Contatos */
+
+.contato {
+  background: url("/assets/img/bkg-3.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.contato_cards {
+  height: 125px;
+  width: 250px;
+  background-color: #efeeea;
+  border: 4px solid #bfbfbf;
+  margin: 10px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 2rem 0;
+  background-color: #efeeea;
+}
+
+@media (max-width: 727px) {
+  .remove {
+    display: none;
+  }
+}
